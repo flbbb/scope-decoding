@@ -2,14 +2,13 @@
 
 This repository contains code for launching SCOPE unfaithful decoding methods.
 
-$$
-y_t \sim p_{\theta}(y_t | y_{<t}, x) + \alpha_t p_{\text{LM}}(y_t | y_{<t}),
-$$
+$y_t \sim p_{\theta}(\cdot | y_{<t}, x) + \alpha_t p_{\text{LM}}(\cdot | y_{<t}),$
 where $\alpha_t \in \{0, 1\}$ is a binary random variable that indicates whether the LM is used at time $t$.
 
 # Quick start
 
 ## Installation
+First, install your PyTorch version (>= 2.0 should work).
 ```bash
 pip install -e .
 ```
